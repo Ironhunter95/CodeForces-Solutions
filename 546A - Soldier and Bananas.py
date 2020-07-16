@@ -6,4 +6,7 @@ Required = int(init[2])
 totalcost =0
 for i in range(Required+1):
     totalcost+= BananaCost*i
-print(totalcost - Money)
+if (totalcost-Money) <0:
+    print(0)
+else:
+    print(totalcost - Money)
